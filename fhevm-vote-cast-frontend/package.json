@@ -1,0 +1,36 @@
+{
+  "name": "fhevm-vote-cast-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node src/scripts/genabi.mjs && next dev",
+    "dev:mock": "node src/scripts/check-node.mjs && node src/scripts/genabi.mjs && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fhevm/mock-utils": "0.1.0",
+    "@zama-fhe/relayer-sdk": "0.2.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "ethers": "^6.13.4",
+    "lucide-react": "^0.460.0",
+    "next": "15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^2.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.11",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.6.3"
+  }
+}
